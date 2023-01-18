@@ -107,7 +107,6 @@ $ docker logs --follow my-site-2
 http://localhost:8888
 ```
 
- ```
 ## Cleanup
 
  - Remove used containers:
