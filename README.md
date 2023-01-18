@@ -5,77 +5,77 @@ Managing Containers
 
 ## Preparations
 ```
-$ docker pull dockersamples/static-site
+docker pull dockersamples/static-site
 ```
 
 ## Instructions
 
  - Run the following containers using dockerhub images:
 ```
-$ docker run --name my-site-1 -e AUTHOR="<Your Name>" -d -p 8880:80 dockersamples/static-site
+docker run --name my-site-1 -e AUTHOR="<Your Name>" -d -p 8880:80 dockersamples/static-site
 ```
 ```
-$ docker run --name my-site-2 -e AUTHOR="<Your friend's Name>" -d -p 8888:80 dockersamples/static-site
+docker run --name my-site-2 -e AUTHOR="<Your friend's Name>" -d -p 8888:80 dockersamples/static-site
 ```
 
  - Please validate that your ontainers are running successfully:
 ```
-$ docker ps
+docker ps
 ```
 
  - Stop the first container (site 1):
 ```
-$ docker stop my-site-1
+docker stop my-site-1
 ```
 
  - Kill the second container (site 2):
 ```
-$ docker kill my-site-2
+docker kill my-site-2
 ```
 
  - Display running containers:
 ```
-$ docker ps
+docker ps
 ```
 
  - Show all the containers -> including non running containers:
 ```
-$ docker ps -a
+docker ps -a
 ```
 
  - please start both of containers again:
 ```
-$ docker start my-site-1 my-site-2
+docker start my-site-1 my-site-2
 ```
 
  - Restart the first container:
 ```
-$ docker restart my-site-1
+docker restart my-site-1
 ```
 
  - Display the docker **host** information with:
 ```
-$ docker info
+docker info
 ```
 
  - Display the resource usage statistics of both running containers (exit with Ctrl + C):
 ```
-$ docker stats my-site-1 my-site-2
+docker stats my-site-1 my-site-2
 ```
 
  - Retrieve the history of the second container image:
 ```
-$ docker history my-site-1
+docker history my-site-1
 ```
 
  - Inspect the containers image:
 ```
-$ docker inspect dockersamples/static-site
+docker inspect dockersamples/static-site
 ```
 
  - Inspect the first container and look for it's internal ip:
 ```
-$ docker inspect my-site-1
+docker inspect my-site-1
 ```
 ```
 "Networks": {
@@ -99,7 +99,7 @@ $ docker inspect my-site-1
 
  - Show the logs of the second container using the flag --follow:
 ```
-$ docker logs --follow my-site-2
+docker logs --follow my-site-2
 ```
 
  - From your browser, browse to the application and watch the containers logs changing in the CLI **terminal**:
@@ -111,6 +111,6 @@ http://localhost:8888
 
  - Remove used containers:
 ```
-$ docker rm -f my-site-2 my-site-1
+docker rm -f my-site-2 my-site-1
 ```
 
