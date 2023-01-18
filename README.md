@@ -65,7 +65,7 @@ docker stats my-site-1 my-site-2
 
  - Retrieve the history of the second container image:
 ```
-docker history my-site-1
+docker history dockersamples/static-site
 ```
 
  - Inspect the containers image:
