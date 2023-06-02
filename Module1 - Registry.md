@@ -8,7 +8,7 @@ Local Registry
 ```
  sudo apt-get update
 ```
-- install packages to use
+- Install packageswhich will be used in the labs
 ```
  sudo apt-get install nano curl git
 ```
