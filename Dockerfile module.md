@@ -87,3 +87,7 @@ docker push localhost:5000/nginx-server:latest
 
 docker push localhost:5000/nginx-server:1.0.0
 ```
+- Let us check the catalog tags
+```
+ curl -X GET http://localhost:5000/v2/nginx-serve/tags/list
+```
