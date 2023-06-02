@@ -4,7 +4,14 @@ Local Registry
 ---
 
 ## Preparations
-
+- Update apt
+```
+ sudo apt-get update
+```
+- install packages to use
+```
+ sudo apt-get install nano curl git
+```
 - Pull docker registry and ubuntu
 ```
 docker pull registry:2
