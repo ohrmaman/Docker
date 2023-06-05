@@ -97,6 +97,11 @@ docker inspect my-site-1
 }
 ```
 
+ - From your browser, browse to the application and watch The site's name defined by the environment variable:
+```
+http://localhost:8880
+```
+
  - Show the logs of the second container using the flag --follow:
 ```
 docker logs --follow my-site-2
