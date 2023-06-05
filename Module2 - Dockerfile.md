@@ -29,7 +29,7 @@ touch server
  - Edit the Dockerfile using (nano, vim, vi ) :
   - for example:
 ``` 
-  vim Dockerfile
+  nano Dockerfile
 ```
 
 - Add the following
