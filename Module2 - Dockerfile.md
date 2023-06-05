@@ -48,7 +48,7 @@ CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
  - Edit the server file using (nano, vim, vi ) :
   - for example:
 ``` 
-  vim server
+  nano server
 ```
 
 - Add the following
