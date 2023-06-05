@@ -37,10 +37,14 @@ docker tag ubuntu:22.04 localhost:5000/my-ubuntu
 docker push localhost:5000/my-ubuntu
 ```
 
- - Lets clear the image lacal cach :
+ - Lets clear the image local cach :
 ```
 docker image remove ubuntu:22.04
 docker image remove localhost:5000/my-ubuntu
+```
+ - Please list the images in your Docker engine :
+```
+docker image ls
 ```
 
  - Pull image from local registry :
